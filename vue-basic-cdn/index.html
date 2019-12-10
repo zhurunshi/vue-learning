@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <title>Vue CDN</title>
+</head>
+
+<body>
+    <div id="vue-app">
+        <h1>属性绑定Data binding</h1>
+        <a v-bind:href="website">baidu</a>
+        <a :href="website">属性绑定简写</a>
+        <!-- <p>{{ websiteTag }}</p> -->
+        <p v-html="websiteTag"></p>
+        <h1>hello, {{ name }}</h1>
+        <p>你的qq是：{{ qq }}</p>
+        <p>{{ greet() }}</p>
+        <p>{{ greet_2() }}</p>
+        <p>{{ greet_3() }}</p>
+        <p>{{ param('morning') }}</p>
+        <p>{{ haveLunch() }}</p>
+
+        <p><input type="text" v-bind:value="name"></p>
+    </div>
+    <div id="vue-app-2">
+
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
